@@ -109,8 +109,8 @@
       $hosp_dias=2;
       $corticoides='3';
       $semana_inicio_cort=12;
-      $inicio_parto;
-      $ruptura_ante;
+      $inicio_parto='3';
+      $ruptura_ante='1';
       $eg_ruptura;
       $tiempo_parto_dias;
       $tiempo_parto_horas;
@@ -1380,9 +1380,52 @@
             if($corticoides_nc=='1')//si
             {
                 echo "<div class='equis' style='width: 10px;height: 10px;background-size: 10px 10px;position:absolute;left:344px;top:777px;'></div>";
-
             }
+
+            //inicio_parto
+            if(!($inicio_parto==' ' || $inicio_parto=='0'))
+            {
                 
+                $y;
+                if($inicio_parto=='1')//espontaneo
+                {
+                    
+                    $y=757;
+
+                }
+                else if($inicio_parto=='2')//inducido
+                {
+                    
+                    $y=767.6;
+                }
+                else if($inicio_parto=='3')//cesar elect.
+                {
+                    
+                    $y=778;//
+                }
+                
+                
+                echo "<div class='equis' style='width: 8px;height: 8px;background-size: 8px 8px;position:absolute;left:377.5px;top:".$y."px;'></div>";
+            }
+
+            //$ruptura_ante
+            if(!($ruptura_ante==' ' || $ruptura_ante=='0'))
+            {    
+                $y;
+                if($ruptura_ante=='1')//integras
+                {
+      
+                    $y=757;
+
+                }
+                else if($ruptura_ante=='2')//rotas
+                {
+                    
+                    $y=770.4;//
+                }
+                echo "<div class='equis' style='width: 8px;height: 8px;background-size: 8px 8px;position:absolute;left:437px;top:".$y."px;'></div>";
+
+             }       
               
 
 
