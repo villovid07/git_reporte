@@ -105,10 +105,10 @@
       $parto='0';
       $fecha_ingreso=date('Y-m-d');
       $tiene_carne='1';
-      $consultas_pre;
-      $hosp_dias;
-      $corticoides;
-      $semana_inicio_cort;
+      $consultas_pre=2;
+      $hosp_dias=2;
+      $corticoides='3';
+      $semana_inicio_cort=12;
       $inicio_parto;
       $ruptura_ante;
       $eg_ruptura;
@@ -160,7 +160,7 @@
       $citologia='1';
       $colposcopia='1';
       $test_sullivan='3';
-      $corticoides_nc;
+      $corticoides_nc='1';
       $ruptura_mem_estado;
       $fecha_ruptura;
       $semana_ruptura;
@@ -1329,10 +1329,63 @@
             }
 
             //$consultas_pre
-            if($consultas_pre != null)
+            if($consultas_pre>0)
             {
-              echo "<p id='consulta_prenatal'>".$consultas_pre."</p>";  
+              echo "<h1 id='consulta_prenatal'>".$consultas_pre."</h1>";  
             }
+
+            //hosp dias
+            if($hosp_dias>0)
+            {
+              echo "<p id='hospitalizacion_dias'>".$hosp_dias."</p>";  
+            }
+
+            //semana_inicio
+            if($semana_inicio_cort>0)
+            {
+              echo "<p id='semana_corticoides'>".$semana_inicio_cort."</p>";  
+            }
+
+            //corticoides
+            if(!($corticoides==' ' || $corticoides=='5'))
+            {
+                $x;
+                $y;
+                if($corticoides=='1')//completo
+                {
+                    $x=244;
+                    $y=757.5;
+
+                }
+                else if($corticoides=='2')//multiples
+                {
+                    $x=244;
+                    $y=773.2;
+                }
+                else if($corticoides=='3')//incompleto
+                {
+                    $x=289;
+                    $y=757.5;
+                }
+                else if($corticoides=='4')//ninguna
+                {
+                    $x=289;
+                    $y=773.2;
+                }
+                
+                echo "<div class='equis' style='width: 8px;height: 8px;background-size: 8px 8px;position:absolute;left:".$x."px;top:".$y."px;'></div>";
+            }
+
+            //$corticoides_nc
+            if($corticoides_nc=='1')//si
+            {
+                echo "<div class='equis' style='width: 10px;height: 10px;background-size: 10px 10px;position:absolute;left:344px;top:777px;'></div>";
+
+            }
+                
+              
+
+
 
 
       ?>

@@ -427,3 +427,30 @@ body
 	left:59px;
 	top:750px;	
 }
+
+#consulta_prenatal
+{
+	font-size:11pt;
+	font-weight:normal;
+	position:absolute;
+	left:130px;
+	top:752px;		
+}
+
+#hospitalizacion_dias
+{
+	font-size:11pt;
+	font-weight:normal;
+	position:absolute;
+	left:191px;
+	top:747px;			
+}
+
+#semana_corticoides
+{
+	font-size:11pt;
+	font-weight:normal;
+	position:absolute;
+	left:346px;
+	top:740px;				
+}
