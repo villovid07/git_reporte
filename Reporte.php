@@ -110,14 +110,14 @@
       $corticoides='3';
       $semana_inicio_cort=12;
       $inicio_parto='3';
-      $ruptura_ante='1';
+      $ruptura_ante='1';// no sirve
       $eg_ruptura;
       $tiempo_parto_dias;
       $tiempo_parto_horas;
-      $eg_parto_semanas;
-      $eg_parto_dias;
-      $eg_parto_confiable;
-      $presentacion_feto;
+      $eg_parto_semanas=3;
+      $eg_parto_dias=3;
+      $eg_parto_confiable='1';
+      $presentacion_feto='1';
       $enfe_ninguna;
       $htaprevia;
       $htainducida;
@@ -136,13 +136,13 @@
       $h_3trim;
       $h_postparto;
       $infeccion_puerperial;
-      $estado_nacimiento;
-      $fecha_hora_parto;
-      $multiple_orden;
-      $multiple_fetos;
+      $estado_nacimiento='1';
+      $fecha_hora_parto=date("Y-m-d H:i:s");
+      $multiple_orden='1';
+      $multiple_fetos='2';
       $forma_parto;
       $induccion_cod;
-      $acompanante;
+      $acompanante='1';
       $pocision_parto;
       $episiotomia;
       $ocitocitos;
@@ -161,11 +161,11 @@
       $colposcopia='1';
       $test_sullivan='3';
       $corticoides_nc='1';
-      $ruptura_mem_estado;
-      $fecha_ruptura;
+      $ruptura_mem_estado='1';// este essssssssssssssssssssssss
+      $fecha_ruptura=date("Y-m-d H:i:s");
       $semana_ruptura=30;
       $temp_ruptura=40.5;
-      $horas_parto_ruptura;
+      $horas_parto_ruptura=3;
       $soloenema;
       $solo_rasurado;
       $enema_rasurado;
@@ -1282,6 +1282,10 @@
                 echo "<div class='equis' style='width: 10px;height: 10px;background-size: 10px 10px;position:absolute;left:".$x."px;top:".$y."px;'></div>";
             }  
 
+
+?>
+<!-- INFORMACION PARTO+++++++++++++++++++++++++++++++++++++++++++--> 
+<?php
             //$parto
 
             if(!($parto==' ' || $parto=='3'))
@@ -1408,17 +1412,17 @@
                 echo "<div class='equis' style='width: 8px;height: 8px;background-size: 8px 8px;position:absolute;left:377.5px;top:".$y."px;'></div>";
             }
 
-            //$ruptura_ante
-            if(!($ruptura_ante==' ' || $ruptura_ante=='0'))
+            //$ruptura_mem_estado
+            if(!($ruptura_mem_estado==' ' || $ruptura_mem_estado=='0'))
             {    
                 $y;
-                if($ruptura_ante=='1')//integras
+                if($ruptura_mem_estado=='1')//integras
                 {
       
                     $y=757;
 
                 }
-                else if($ruptura_ante=='2')//rotas
+                else if($ruptura_mem_estado=='2')//rotas
                 {
                     
                     $y=770.4;//
@@ -1443,13 +1447,141 @@
              if($temp_ruptura>=38)
              {
                 echo "<div class='equis' style='width: 8px;height: 8px;background-size: 8px 8px;position:absolute;left:558.5px;top:775.5px;'></div>";                         
-             }   
+             }  
 
-              
+             //$fecha_ruptura
 
+             if($fecha_ruptura!= null)
+             {
+                 $dia=date("d", strtotime($fecha_ingreso));
+                 $mes=date("m", strtotime($fecha_ingreso));
+                 $ano=date("y", strtotime($fecha_ingreso));
 
+                 //sacar hora y minuto como?
 
+                 $hora=date("H", strtotime($fecha_ingreso));
+                 $minute=date("i", strtotime($fecha_ingreso));
 
+                 echo "<p id='dia_membrana'>".$dia."</p>";  
+                 echo "<p id='mes_membrana'>".$mes. "</p>" ; 
+                 echo "<p id='ano_membrana'>".$ano. "</p>" ;
+
+                 echo "<p id='hora_membrana'>".$hora. "</p>" ;
+                 echo "<p id='minute_membrana'>".$minute. "</p>";
+             } 
+
+             if($horas_parto_ruptura>0)
+             {
+                echo "<p id='horas_parto_ruptura'>".$horas_parto_ruptura. "</p>";
+             }
+
+             //$eg_parto_dias
+             //$eg_parto_semanas
+
+             if($eg_parto_semanas >0)
+             {
+                echo "<p id='eg_parto_semanas'>".$eg_parto_semanas. "</p>";
+             } 
+
+             if($eg_parto_dias >0)
+             {
+                echo "<p id='eg_parto_dias'>".$eg_parto_dias. "</p>";
+             } 
+
+             //$eg_parto_confiable
+
+             if(!($eg_parto_confiable =='3' || $eg_parto_confiable =='4' || $eg_parto_confiable ==' '))
+             {
+                $x;
+                if($eg_parto_confiable=='1')//por FUM
+                {
+                    $x=693.2;
+
+                }
+                else if($eg_parto_confiable=='2')//por ECO
+                {   
+                    $x=702.8;//
+                }
+                echo "<div class='equis' style='width: 8px;height: 8px;background-size: 8px 8px;position:absolute;left:".$x."px;top:779.5px;'></div>";
+
+             }
+
+             //presentacion
+             if(!($presentacion_feto==' ' || $presentacion_feto=='0' || $presentacion_feto=='4'))
+             {
+                 $y;  
+                 if($presentacion_feto=='1')//cefalica
+                 {
+                    $y=756.8;
+                 } 
+
+                 else if($presentacion_feto=='2')//pelviana
+                 {
+                    $y=768;
+                 }
+
+                 else if($presentacion_feto=='3')//transversa
+                 {
+                    $y=778.5;
+                 }
+
+                 echo "<div class='equis' style='width: 8px;height: 8px;background-size: 8px 8px;position:absolute;left:736.5px;top:".$y."px;'></div>";
+             } 
+
+             //$acompanante='1'
+             if(!($acompanante==' ' || $acompanante=='4'))
+             {
+                 $y;  
+                 if($acompanante=='1')//pareja
+                 {
+                    $y=810.7;
+                 } 
+
+                 else if($acompanante=='2')//familiar
+                 {
+                    $y=818.9;
+                 }
+
+                 else if($acompanante=='3')//otro
+                 {
+                    $y=826.9;
+                 }
+
+                 else if($acompanante=='0')//ninguno
+                 {
+                    $y=835.3;//
+                 }
+
+                 echo "<div class='equis' style='width: 8px;height: 8px;background-size: 8px 8px;position:absolute;left:28.7px;top:".$y."px;'></div>";
+             } 
+
+            //$estado_nacimiento='1';
+            //$fecha_hora_parto=date("Y-m-d H:i:s");
+            //$multiple_orden='1';
+            //$multiple_fetos='2';
+
+             if(!($estado_nacimiento=' ' || $estado_nacimiento='0'))
+             {
+                $y;  
+                if($estado_nacimiento=='1')//vivo
+                {
+                    $y=810.7;
+                }
+                else if($estado_nacimiento=='2')//muerto anteparto
+                {
+                    $y=818.9; 
+                }
+                else if($estado_nacimiento=='3')//muerto parto
+                {
+                    $y=826.9;
+                }
+                else if($estado_nacimiento=='4')//muerto ignora momento
+                {
+                    $y=835.3;
+                }
+
+                echo "<div class='equis' style='width: 8px;height: 8px;background-size: 8px 8px;position:absolute;left:70px;top:".$y."px;'></div>";
+             }
       ?>
 
 

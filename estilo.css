@@ -463,3 +463,78 @@ body
 	left:529px;
 	top:754px
 }
+
+/**
+
+*/
+#ano_membrana
+{
+	font-size:10pt;
+	font-weight:normal;
+	position:absolute;
+	left:483px;
+	top:741px
+}
+
+#mes_membrana
+{
+	font-size:10pt;
+	font-weight:normal;
+	position:absolute;
+	left:502.3px;
+	top:741px
+}
+
+#dia_membrana
+{
+	font-size:10pt;
+	font-weight:normal;
+	position:absolute;
+	left:521px;
+	top:741px
+}	
+
+#hora_membrana
+{
+	font-size:11pt;
+	font-weight:normal;
+	position:absolute;
+	left:483px;
+	top:754px	
+}
+
+#minute_membrana
+{
+	font-size:11pt;
+	font-weight:normal;
+	position:absolute;
+	left:502.3px;
+	top:754px	
+}
+
+#horas_parto_ruptura
+{
+	font-size:11pt;
+	font-weight:normal;
+	position:absolute;
+	left:612px;
+	top:754px		
+}
+
+#eg_parto_semanas
+{
+	font-size:11pt;
+	font-weight:normal;
+	position:absolute;
+	left:677px;
+	top:747px		
+}
+
+#eg_parto_dias
+{
+	font-size:11pt;
+	font-weight:normal;
+	position:absolute;
+	left:706px;
+	top:747px			
+}
