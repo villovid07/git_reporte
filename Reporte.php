@@ -163,8 +163,8 @@
       $corticoides_nc='1';
       $ruptura_mem_estado;
       $fecha_ruptura;
-      $semana_ruptura;
-      $temp_ruptura;
+      $semana_ruptura=30;
+      $temp_ruptura=40.5;
       $horas_parto_ruptura;
       $soloenema;
       $solo_rasurado;
@@ -1426,6 +1426,25 @@
                 echo "<div class='equis' style='width: 8px;height: 8px;background-size: 8px 8px;position:absolute;left:437px;top:".$y."px;'></div>";
 
              }       
+
+             //$semana_ruptura
+
+             if($semana_ruptura>0)
+             {
+
+                echo "<p id='semana_rupt'>".$semana_ruptura."</p>";  
+                if($semana_ruptura<37)
+                {
+                     echo "<div class='equis' style='width: 8px;height: 8px;background-size: 8px 8px;position:absolute;left:558.5px;top:755px;'></div>";                         
+                }
+             }
+
+             //$temp_ruptura
+             if($temp_ruptura>=38)
+             {
+                echo "<div class='equis' style='width: 8px;height: 8px;background-size: 8px 8px;position:absolute;left:558.5px;top:775.5px;'></div>";                         
+             }   
+
               
 
 
