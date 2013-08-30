@@ -145,16 +145,16 @@
       $acompanante='1';
       $pocision_parto='1';
       $episiotomia='1';
-      $ocitocitos;
-      $placenta_completa;
-      $ligadura_cordon;
-      $mgso4;
-      $ocitocina;
-      $antibiot;
-      $analgesia;
-      $anestesia_reg;
-      $anestesia_grl;
-      $transfusion;
+      $ocitocitos='1';
+      $placenta_completa='0';
+      $ligadura_cordon='1';
+      $mgso4='1';
+      $ocitocina='1';
+      $antibiot='1';
+      $analgesia='1';
+      $anestesia_reg='1';
+      $anestesia_grl='1';
+      $transfusion='1';// de sangre
       $nro_gestacion=12;
       $fuma_estado='3';
       $citologia='1';
@@ -170,10 +170,10 @@
       $solo_rasurado='1';
       $enema_rasurado='1';
       $desgarro_cond='1';
-      $placenta_retenida;
-      $partograma;
-      $transfusion_otros;
-      $transfusion_ninguno;
+      $placenta_retenida='1';
+      $partograma='0';
+      $transfusion_otros='1';//derivados
+      $transfusion_ninguno='1';
       $preeclampsia_estado;
       $anemia;
       $vih_solicitado2='1';
@@ -1742,6 +1742,214 @@
 
                 echo "<div class='equis' style='width:10px;height:10px;background-size: 10px 10px;position:absolute;left:".$x."px;top:807px;'></div>";
              }
+                
+             //$ocitocitos
+             
+             if (!($ocitocitos=='' || $ocitocitos=='0' ))
+             {
+                $y;
+                if($ocitocitos=='1')//ocitocina
+                {
+                   $y=867; 
+                }
+                else if($ocitocitos=='2')//espontaneo
+                {
+                   $y=875.5; 
+                }
+                else if($ocitocitos=='3')//otro ocitocito
+                {
+                   $y=884; 
+                }
+                else if($ocitocitos=='4')//no
+                {
+                   $y=892; 
+                }
+
+                echo "<div class='equis' style='width:8px;height:8px;background-size: 8px 8px;position:absolute;left:29.3px;top:".$y."px;'></div>";  
+             }
+
+             //$ligadura_cordon
+
+             if (!($ligadura_cordon=='' || $ligadura_cordon=='0' ))
+             {
+                $y;
+                if($ligadura_cordon=='1')//< 30
+                {
+                   $y=868.7; 
+                }
+                else if($ligadura_cordon=='2')//30s-1m
+                {
+                   $y=877.3;// 
+                }
+                else if($ligadura_cordon=='3')//> 1m
+                {
+                   $y=885.5;// 
+                }
+                echo "<div class='equis' style='width:8px;height:8px;background-size: 8px 8px;position:absolute;left:97.9px;top:".$y."px;'></div>";  
+             }
+
+             //$placenta_completa
+             //$placenta_retenida
+             if(!($placenta_completa=='' || $placenta_completa=='3'))
+             {
+                $x;  
+                if($placenta_completa=='1')//si
+                {
+                    $x=144;
+                }
+                else if($placenta_completa=='0')//no
+                {
+                    $x=156;
+                }
+
+                echo "<div class='equis' style='width:9px;height:9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:864.8px;'></div>";
+             }
+
+             if(!($placenta_retenida=='' || $placenta_retenida=='3'))
+             {
+                $x;  
+                if($placenta_retenida=='1')//si
+                {
+                    $x=190.5;
+                }
+                else if($placenta_retenida=='0')//no
+                {
+                    $x=178.5;//
+                }
+
+                echo "<div class='equis' style='width:9px;height:9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:864.8px;'></div>";
+             } 
+
+             //$partograma='1'
+             if(!($partograma=='' || $partograma=='3'))
+             {
+                $x;  
+                if($partograma=='1')//si
+                {
+                    $x=144;
+                }
+                else if($partograma=='0')//no
+                {
+                    $x=156;
+                }
+
+                echo "<div class='equis' style='width:9px;height:9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:892.6px;'></div>";
+             }
+
+             //medicacion recibida
+             //$ocitocina='1';
+             if(!($ocitocina=='' || $ocitocina=='3'))
+             {
+                $x;  
+                if($ocitocina=='1')//si
+                {
+                    $x=225;
+                }
+                else if($ocitocina=='0')//no
+                {
+                    $x=213;//
+                }
+
+                echo "<div class='equis' style='width:9px;height:9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:865px;'></div>";
+             }               
+             //$antibiot='1';
+             if(!($antibiot=='' || $antibiot=='3'))
+             {
+                $x;  
+                if($antibiot=='1')//si
+                {
+                    $x=225;
+                }
+                else if($antibiot=='0')//no
+                {
+                    $x=213;//
+                }
+
+                echo "<div class='equis' style='width:9px;height:9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:873px;'></div>";
+             }
+             //$analgesia='1';  analgesia epidural
+             if(!($analgesia=='' || $analgesia=='3'))
+             {
+                $x;  
+                if($analgesia=='1')//si
+                {
+                    $x=225;
+                }
+                else if($analgesia=='0')//no
+                {
+                    $x=213;//
+                }
+
+                echo "<div class='equis' style='width:9px;height:9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:881.2px;'></div>";
+             }
+
+             //$anestesia_reg 
+             if(!($anestesia_reg=='' || $anestesia_reg=='3'))
+             {
+                $x;  
+                if($anestesia_reg=='1')//si
+                {
+                    $x=225;
+                }
+                else if($anestesia_reg=='0')//no
+                {
+                    $x=213;//
+                }
+
+                echo "<div class='equis' style='width:9px;height:9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:889.5px;'></div>";
+             }
+
+             //$anestesia_grl='1';
+
+             if(!($anestesia_grl=='' || $anestesia_grl=='3'))
+             {
+                $x;  
+                if($anestesia_grl=='1')//si
+                {
+                    $x=314.5;
+                }
+                else if($anestesia_grl=='0')//no
+                {
+                    $x=302.5;//
+                }
+
+                echo "<div class='equis' style='width:9px;height:9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:851px;'></div>";
+             }
+             //$mgso4='1';
+             
+             if(!($mgso4=='' || $mgso4=='3'))
+             {
+                $x;  
+                if($mgso4=='1')//si
+                {
+                    $x=314.5;
+                }
+                else if($mgso4=='0')//no
+                {
+                    $x=302.5;//
+                }
+
+                echo "<div class='equis' style='width:9px;height:9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:860px;'></div>";
+             }
+             
+             //$transfusion='1';
+             //$transfusion_otros='1';//derivados
+             //$transfusion_ninguno='1';
+             if($transfusion=='1')
+             {
+                echo "<div class='equis' style='width:8px;height:8px;background-size: 8px 8px;position:absolute;left:303px;top:877.5px;'></div>";
+             }
+             if($transfusion_otros=='1')
+             {
+                echo "<div class='equis' style='width:8px;height:8px;background-size: 8px 8px;position:absolute;left:303px;top:884.2px;'></div>";
+             }
+             if($transfusion_ninguno=='1')
+             {
+                echo "<div class='equis' style='width:8px;height:8px;background-size: 8px 8px;position:absolute;left:303px;top:891px;'></div>";
+             }
+
+
+
                 
 
 
