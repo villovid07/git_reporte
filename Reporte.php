@@ -118,24 +118,24 @@
       $eg_parto_dias=3;
       $eg_parto_confiable='1';
       $presentacion_feto='1';
-      $enfe_ninguna;
-      $htaprevia;
-      $htainducida;
-      $preeclampsia;
-      $eclampsia;
-      $cardio_nefropatia;
-      $diabetes;
-      $otragrave;
-      $corio;
-      $infec_urinaria;
-      $amenaza_parto_preter;
-      $rciu;
-      $rotura_prematura;
-      $h_1trim;
-      $h_2trim;
-      $h_3trim;
-      $h_postparto;
-      $infeccion_puerperial;
+      $enfe_ninguna='1';
+      $htaprevia='1';
+      $htainducida='1';
+      $preeclampsia='1';
+      $eclampsia='1';
+      $cardio_nefropatia='1';
+      $diabetes='1';
+      $otragrave='1';
+      $corio='1';
+      $infec_urinaria='1';
+      $amenaza_parto_preter='1';
+      $rciu='1';
+      $rotura_prematura='1';
+      $h_1trim='1';
+      $h_2trim='1';
+      $h_3trim='1';
+      $h_postparto='1';
+      $infeccion_puerperial='1';
       $estado_nacimiento='1';
       $fecha_hora_parto=date("Y-m-d H:i:s");
       $multiple_orden='1';
@@ -175,7 +175,7 @@
       $transfusion_otros='1';//derivados
       $transfusion_ninguno='1';
       $preeclampsia_estado;
-      $anemia;
+      $anemia='1';
       $vih_solicitado2='1';
       $vih_aconsejado='1';
       $operatorio_cod='1234';
@@ -224,8 +224,8 @@
       $fracaso_metodo='1';
       $embarazo_planeado='1';
       $fin_embarazo_anterior=date('Y-m-d');
-      $atendio_parto;
-      $nombre_atendio_parto;
+      $atendio_parto='1';
+      $nombre_atendio_parto='hernan david villota jojojojojo';
       $referido;
       $fallece_en_sala;
       $reanimacion;
@@ -1948,13 +1948,368 @@
                 echo "<div class='equis' style='width:8px;height:8px;background-size: 8px 8px;position:absolute;left:303px;top:891px;'></div>";
              }
 
+              /*
+              $htaprevia='1';
+              $htainducida='1';
+              $preeclampsia='1';
+              $eclampsia='1';
+              $cardio_nefropatia='1';
+              $diabetes='1';
+              $anemia='1';
+              $enfe_ninguna='1';
+              */
+
+             if(!($htaprevia=='' || $htaprevia=='3'))
+             {
+                $x;  
+                if($htaprevia=='1')//si
+                {
+                    $x=435;
+                }
+                else if($htaprevia=='0')//no
+                {
+                    $x=422;//
+                }
+
+                echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:".$x."px;top:875px;'></div>";
+             }
+
+             if(!($htainducida=='' || $htainducida=='3'))
+             {
+                $x;  
+                if($htainducida=='1')//si
+                {
+                    $x=435;
+                }
+                else if($htainducida=='0')//no
+                {
+                    $x=422;//
+                }
+
+                echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:".$x."px;top:883px;'></div>";
+             }
+
+             if(!($preeclampsia=='' || $preeclampsia=='0'))
+             {
+                $x;  
+                if($preeclampsia=='1')//No
+                {
+                    $x=409;
+                }
+                else if($preeclampsia=='2')//S
+                {
+                    $x=422;
+                }
+                else if($preeclampsia=='3')//M
+                {
+                    $x=435;
+                }
+
+                echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:".$x."px;top:890.6px;'></div>";
+             }
+
+             if(!($eclampsia=='' || $eclampsia=='3'))
+             {
+                $x;  
+                if($eclampsia=='1')//si
+                {
+                    $x=435;
+                }
+                else if($eclampsia=='0')//no
+                {
+                    $x=422;//
+                }
+
+                echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:".$x."px;top:898px;'></div>";
+             }
+
+             if(!($cardio_nefropatia=='' || $cardio_nefropatia=='3'))
+             {
+                $x;  
+                if($cardio_nefropatia=='1')//si
+                {
+                    $x=435;
+                }
+                else if($cardio_nefropatia=='0')//no
+                {
+                    $x=422;//
+                }
+
+                echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:".$x."px;top:905.4px;'></div>";
+             }
+
+             if(!($anemia=='' || $anemia=='3'))
+             {
+                $x;  
+                if($anemia=='1')//si
+                {
+                    $x=435;
+                }
+                else if($anemia=='0')//no
+                {
+                    $x=422;//
+                }
+
+                echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:".$x."px;top:920.5px;'></div>";
+             }
+
+             if(!($diabetes=='' || $diabetes=='0'))
+             {
+                $x;  
+                if($diabetes=='1')//no
+                {
+                    $x=396;
+                }
+                else if($diabetes=='2')//I
+                {
+                    $x=409;
+                }
+                else if($diabetes=='3')//II
+                {
+                    $x=422;
+                }
+                else if($diabetes=='2')//G
+                {
+                    $x=435;
+                }
+
+                echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:".$x."px;top:913px;'></div>";
+             }
+
+             if($enfe_ninguna=='1')
+             {
+                echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:435px;top:928.5px;'></div>";
+             }
+              /*
+              $infec_urinaria='1';
+              $amenaza_parto_preter='1';  
+              $rciu='1';
+              $rotura_prematura='1';
+              $corio='1';
+              $otragrave='1';
+              */
+             if(!($amenaza_parto_preter=='' || $amenaza_parto_preter=='3'))
+             {
+                $x;  
+                if($amenaza_parto_preter=='1')//si
+                {
+                    $x=540;
+                }
+                else if($amenaza_parto_preter=='0')//no
+                {
+                    $x=527;//
+                }
+
+                echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:".$x."px;top:883px;'></div>";
+             }
+
+             if(!($infec_urinaria=='' || $infec_urinaria=='3'))
+             {
+                $x;  
+                if($infec_urinaria=='1')//si
+                {
+                    $x=540;
+                }
+                else if($infec_urinaria=='0')//no
+                {
+                    $x=527;//
+                }
+
+                echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:".$x."px;top:875px;'></div>";
+             }
+
+             if(!($rciu=='' || $rciu=='3'))
+             {
+                $x;  
+                if($rciu=='1')//si
+                {
+                    $x=540;
+                }
+                else if($rciu=='0')//no
+                {
+                    $x=527;//
+                }
+
+                echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:".$x."px;top:890.6px;'></div>";
+             }
+
+             if(!($rotura_prematura=='' || $rotura_prematura=='3'))
+             {
+                $x;  
+                if($rotura_prematura=='1')//si
+                {
+                    $x=540;
+                }
+                else if($rotura_prematura=='0')//no
+                {
+                    $x=527;//
+                }
+
+                echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:".$x."px;top:898px;'></div>";
+             }
+              
+             if(!($corio=='' || $corio=='3'))
+             {
+                $x;  
+                if($corio=='1')//si
+                {
+                    $x=540;
+                }
+                else if($corio=='0')//no
+                {
+                    $x=527;//
+                }
+
+                echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:".$x."px;top:905.4px;'></div>";
+             }
+
+             if(!($otragrave=='' || $otragrave=='3'))
+             {
+                $x;  
+                if($otragrave=='1')//si
+                {
+                    $x=540;
+                }
+                else if($otragrave=='0')//no
+                {
+                    $x=527;//
+                }
+
+                echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:".$x."px;top:913px;'></div>";
+             } 
+              
+              
+              /*
+              $h_1trim='1';
+              $h_2trim='1';
+              $h_3trim='1';
+              $h_postparto='1';
+              $infeccion_puerperial='1';
+              */
+             if(!($h_1trim=='' || $h_1trim=='3'))
+             {
+                $x;  
+                if($h_1trim=='1')//si
+                {
+                    $x=664;
+                }
+                else if($h_1trim=='0')//no
+                {
+                    $x=627;//
+                }
+
+                echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:".$x."px;top:875.3px;'></div>";
+             }              
+
+             if(!($h_1trim=='' || $h_1trim=='3'))
+             {
+                $x;  
+                if($h_1trim=='1')//si
+                {
+                    $x=664.3;
+                }
+                else if($h_1trim=='0')//no
+                {
+                    $x=627;//
+                }
+
+                echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:".$x."px;top:875.3px;'></div>";
+             }
+
+             if(!($h_2trim=='' || $h_2trim=='3'))
+             {
+                $x;  
+                if($h_2trim=='1')//si
+                {
+                    $x=664.3;
+                }
+                else if($h_2trim=='0')//no
+                {
+                    $x=627;//
+                }
+
+                echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:".$x."px;top:884.2px;'></div>";
+             }
+
+             if(!($h_3trim=='' || $h_3trim=='3'))
+             {
+                $x;  
+                if($h_3trim=='1')//si
+                {
+                    $x=664.3;
+                }
+                else if($h_3trim=='0')//no
+                {
+                    $x=627;//
+                }
+
+                echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:".$x."px;top:893px;'></div>";
+             }
 
 
-                
+             if(!($h_postparto=='' || $h_postparto=='3'))
+             {
+                $x;  
+                if($h_postparto=='1')//si
+                {
+                    $x=664;
+                }
+                else if($h_postparto=='0')//no
+                {
+                    $x=627;//
+                }
 
+                echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:".$x."px;top:902px;'></div>";
+             }
 
+             if(!($infeccion_puerperial=='' || $infeccion_puerperial=='3'))
+             {
+                $x;  
+                if($infeccion_puerperial=='1')//si
+                {
+                    $x=664;
+                }
+                else if($infeccion_puerperial=='0')//no
+                {
+                    $x=627;//
+                }
 
+                echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:".$x."px;top:910.5px;'></div>";
+             }
 
+             //$atendio_parto='1';
+             //$nombre_atendio_parto='hernan david villota jojojojojo';
+            
+            if(!($atendio_parto=='' || $atendio_parto=='0'))
+             {
+                $x;  
+                if($atendio_parto=='1')//medico
+                {
+                    $x=664;
+                }
+                else if($atendio_parto=='2')//enf
+                {
+                    $x=627;//
+                }
+                else if($atendio_parto=='3')//aux
+                {
+                    $x=627;//
+                }
+                else if($atendio_parto=='4')//estud
+                {
+                    $x=627;//
+                }
+                else if($atendio_parto=='5')//empirico
+                {
+                    $x=627;//
+                }
+                else if($atendio_parto=='6')//otro
+                {
+                    $x=627;//
+                }
+
+                echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:".$x."px;top:910.5px;'></div>";
+             }
       ?>
 
 
