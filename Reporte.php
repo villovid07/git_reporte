@@ -224,7 +224,7 @@
       $fracaso_metodo='1';
       $embarazo_planeado='1';
       $fin_embarazo_anterior=date('Y-m-d');
-      $atendio_parto='1';
+      $atendio_parto='4';
       $nombre_atendio_parto='hernan david villota jojojojojo';
       $referido;
       $fallece_en_sala;
@@ -237,7 +237,7 @@
       $eg_semanas_rn;
       $longitud;
       $per_cefalico;
-      $sexo_rn;
+      $sexo_rn='M';
       $peso_rn;
 
       $muertos_despues=12;
@@ -2285,32 +2285,66 @@
                 $x;  
                 if($atendio_parto=='1')//medico
                 {
-                    $x=664;
+                    $x=29.7;
+                    $y=920.5;
                 }
                 else if($atendio_parto=='2')//enf
                 {
-                    $x=627;//
+                    $x=29.7;
+                    $y=928.4;
                 }
                 else if($atendio_parto=='3')//aux
                 {
-                    $x=627;//
+                    $x=64.2;//
+                    $y=920.5;
                 }
                 else if($atendio_parto=='4')//estud
                 {
-                    $x=627;//
+                    $x=64.2;//
+                    $y=928.4;
                 }
                 else if($atendio_parto=='5')//empirico
                 {
-                    $x=627;//
+                    $x=95;//
+                    $y=920.5;
                 }
                 else if($atendio_parto=='6')//otro
                 {
-                    $x=627;//
+                    $x=95;//
+                    $y=928.4;
                 }
 
-                echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:".$x."px;top:910.5px;'></div>";
+                echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:".$x."px;top:".$y."px;'></div>";
              }
       ?>
+
+      <p id="nombre_atendio_parto"><?php echo $nombre_atendio_parto  ?></p>
+
+      <!-- RECIEN NACIDO ++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <?php
+          //$sexo_rn='1'
+          if(!($sexo_rn==' ')
+          {
+            $y;
+            if($sexo_rn=='F')
+            {
+              $y=970;
+            }
+            else if($sexo_rn=='O')
+            {
+              $y=970;  
+            }
+
+            else if($sexo_rn=='M')
+            {
+              $y=970;
+            }
+            echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:30px;top:".$y."px;'></div>";
+
+          }
+
+      ?>
+
 
 
 

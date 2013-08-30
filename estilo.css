@@ -620,3 +620,13 @@ body
 	left:430px;
 	top:821px;		
 }
+
+#nombre_atendio_parto
+{
+	font-size:8pt;
+	font-weight:normal;
+	position:absolute;
+	left:134px;
+	top:911px;
+	text-transform: capitalize;; 			
+}
