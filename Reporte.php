@@ -140,11 +140,11 @@
       $fecha_hora_parto=date("Y-m-d H:i:s");
       $multiple_orden='1';
       $multiple_fetos='2';
-      $forma_parto;
-      $induccion_cod;
+      $forma_parto='2';
+      $induccion_cod='1234';
       $acompanante='1';
-      $pocision_parto;
-      $episiotomia;
+      $pocision_parto='1';
+      $episiotomia='1';
       $ocitocitos;
       $placenta_completa;
       $ligadura_cordon;
@@ -166,10 +166,10 @@
       $semana_ruptura=30;
       $temp_ruptura=40.5;
       $horas_parto_ruptura=3;
-      $soloenema;
-      $solo_rasurado;
-      $enema_rasurado;
-      $desgarro_cond;
+      $soloenema='1';
+      $solo_rasurado='1';
+      $enema_rasurado='1';
+      $desgarro_cond='1';
       $placenta_retenida;
       $partograma;
       $transfusion_otros;
@@ -178,7 +178,7 @@
       $anemia;
       $vih_solicitado2='1';
       $vih_aconsejado='1';
-      $operatorio_cod;
+      $operatorio_cod='1234';
       $hrs_egreso_post;
       $vacunas_ninguna;
       $vacunas_hepat;
@@ -1453,14 +1453,14 @@
 
              if($fecha_ruptura!= null)
              {
-                 $dia=date("d", strtotime($fecha_ingreso));
-                 $mes=date("m", strtotime($fecha_ingreso));
-                 $ano=date("y", strtotime($fecha_ingreso));
+                 $dia=date("d", strtotime($fecha_ruptura));
+                 $mes=date("m", strtotime($fecha_ruptura));
+                 $ano=date("y", strtotime($fecha_ruptura));
 
                  //sacar hora y minuto como?
 
-                 $hora=date("H", strtotime($fecha_ingreso));
-                 $minute=date("i", strtotime($fecha_ingreso));
+                 $hora=date("H", strtotime($fecha_ruptura));
+                 $minute=date("i", strtotime($fecha_ruptura));
 
                  echo "<p id='dia_membrana'>".$dia."</p>";  
                  echo "<p id='mes_membrana'>".$mes. "</p>" ; 
@@ -1560,29 +1560,198 @@
             //$multiple_orden='1';
             //$multiple_fetos='2';
 
-             if(!($estado_nacimiento=' ' || $estado_nacimiento='0'))
+             if(!($estado_nacimiento==' ' || $estado_nacimiento=='0'))
              {
                 $y;  
                 if($estado_nacimiento=='1')//vivo
                 {
-                    $y=810.7;
+                    $y=804.8;
                 }
                 else if($estado_nacimiento=='2')//muerto anteparto
                 {
-                    $y=818.9; 
+                    $y=814.8; 
                 }
                 else if($estado_nacimiento=='3')//muerto parto
                 {
-                    $y=826.9;
+                    $y=824.7;
                 }
                 else if($estado_nacimiento=='4')//muerto ignora momento
                 {
-                    $y=835.3;
+                    $y=835.4;//
                 }
 
-                echo "<div class='equis' style='width: 8px;height: 8px;background-size: 8px 8px;position:absolute;left:70px;top:".$y."px;'></div>";
+                echo "<div class='equis' style='width:8px;height:8px;background-size: 8px 8px;position:absolute;left:105.8px;top:".$y."px;'></div>";
              }
+
+
+             if($fecha_hora_parto!= null)
+             {
+                 $dia=date("d", strtotime($fecha_hora_parto));
+                 $mes=date("m", strtotime($fecha_hora_parto));
+                 $ano=date("y", strtotime($fecha_hora_parto));
+
+                 //sacar hora y minuto como?
+
+                 $hora=date("h", strtotime($fecha_hora_parto));
+                 $minute=date("i", strtotime($fecha_hora_parto));
+
+                 echo "<p id='dia_parto'>".$dia."</p>";  
+                 echo "<p id='mes_parto'>".$mes. "</p>" ; 
+                 echo "<p id='ano_parto'>".$ano. "</p>" ;
+
+                 echo "<p id='hora_parto'>".$hora. "</p>" ;
+                 echo "<p id='minute_parto'>".$minute. "</p>";
+             } 
+
+             if($multiple_orden>0)
+             {
+                  echo "<p id='multiple_orden'>".$multiple_orden. "</p>" ;
+             }
+
+             if($multiple_fetos>0)
+             {
+                  echo "<p id='multiple_fetos'>".$multiple_fetos. "</p>" ;
+             }
+
+             //$forma_parto
+             if(!($forma_parto=='' || $forma_parto=='0' || $forma_parto=='5'))
+             {
+                $y;  
+                if($forma_parto=='1')//espontanea
+                {
+                    $y=805.2;
+                }
+                else if($forma_parto=='2')//cesarea
+                {
+                    $y=824; 
+                }
+                else if($forma_parto=='3')//forceps
+                {
+                    $y=814.7;
+                }
+                else if($forma_parto=='4')//espatula
+                {
+                    $y=833.5;//
+                }
+
+                echo "<div class='equis' style='width:8px;height:8px;background-size: 8px 8px;position:absolute;left:281.4px;top:".$y."px;'></div>";
+             }
+             //$induccion_cod
+             //$operatorio_cod
       ?>
+      
+      <p id="induccion_cod"><?php echo $induccion_cod;?></p>
+      <p id="operatorio_cod"><?php echo $operatorio_cod;?></p>
+      
+      <?php
+
+        //$pocision_parto
+             if(!($pocision_parto=='' || $pocision_parto=='0'))
+             {
+                $y;  
+                if($pocision_parto=='1')//sentada
+                {
+                    $y=810.2;
+                }
+                else if($pocision_parto=='2')//acostada
+                {
+                    $y=829.2; 
+                }
+                else if($pocision_parto=='3')//cuclillas
+                {
+                    $y=819.7;
+                }
+
+                echo "<div class='equis' style='width:8px;height:8px;background-size: 8px 8px;position:absolute;left:497.5px;top:".$y."px;'></div>";
+             }
+         //$episiotomia='1'
+             if(!($episiotomia=='' || $episiotomia=='3'))
+             {
+                $y;  
+                if($episiotomia=='1')//si
+                {
+                    $y=816.2;
+                }
+                else if($episiotomia=='0')//no
+                {
+                    $y=805.2;
+                }
+
+                echo "<div class='equis' style='width:10px;height:10px;background-size: 10px 10px;position:absolute;left:578px;top:".$y."px;'></div>";
+             }
+
+          //$soloenema='1';
+          //$solo_rasurado='1';
+          //$enema_rasurado='1';    
+            if(!($soloenema=='' || $soloenema=='3'))
+             {
+                $x;  
+                if($soloenema=='1')//si
+                {
+                    $x=651.5;
+                }
+                else if($soloenema=='0')//no
+                {
+                    $x=640;//
+                }
+
+                echo "<div class='equis' style='width:10px;height:10px;background-size: 10px 10px;position:absolute;left:".$x."px;top:805px;'></div>";
+             }
+             if(!($solo_rasurado=='' || $solo_rasurado=='3'))
+             {
+                $x;  
+                if($solo_rasurado=='1')//si
+                {
+                    $x=651.5;
+                }
+                else if($solo_rasurado=='0')//no
+                {
+                    $x=640;//
+                }
+
+                echo "<div class='equis' style='width:10px;height:10px;background-size: 10px 10px;position:absolute;left:".$x."px;top:815.2px;'></div>";
+             }
+             if(!($enema_rasurado=='' || $enema_rasurado=='3'))
+             {
+                $x;  
+                if($enema_rasurado=='1')//si
+                {
+                    $x=651.5;
+                }
+                else if($enema_rasurado=='0')//no
+                {
+                    $x=640;//
+                }
+
+                echo "<div class='equis' style='width:10px;height:10px;background-size: 10px 10px;position:absolute;left:".$x."px;top:823.8px;'></div>";
+             }
+
+             //$desgarro_cond
+
+             if(!($desgarro_cond=='' || $desgarro_cond=='3'))
+             {
+                $x;  
+                if($desgarro_cond=='1')//si
+                {
+                    $x=778;
+                }
+                else if($desgarro_cond=='0')//no
+                {
+                    $x=756;//
+                }
+
+                echo "<div class='equis' style='width:10px;height:10px;background-size: 10px 10px;position:absolute;left:".$x."px;top:807px;'></div>";
+             }
+                
+
+
+
+
+      ?>
+
+
+
+
 
 
 

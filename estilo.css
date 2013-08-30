@@ -538,3 +538,85 @@ body
 	left:706px;
 	top:747px			
 }
+
+/*fecha hora parto*/
+
+#ano_parto
+{
+	font-size:9pt;
+	font-weight:normal;
+	position:absolute;
+	left:170px;
+	top:804.5px			
+}
+
+#mes_parto
+{
+	font-size:9pt;
+	font-weight:normal;
+	position:absolute;
+	left:185.3px;
+	top:804.5px			
+}
+
+#dia_parto
+{
+	font-size:9pt;
+	font-weight:normal;
+	position:absolute;
+	left:200.2px;
+	top:804.5px			
+}
+
+#hora_parto
+{
+	font-size:9pt;
+	font-weight:normal;
+	position:absolute;
+	left:173px;
+	top:791px			
+}
+
+#minute_parto
+{
+	font-size:9pt;
+	font-weight:normal;
+	position:absolute;
+	left:197px;
+	top:791px			
+}
+
+#multiple_orden
+{
+	font-size:9pt;
+	font-weight:normal;
+	position:absolute;
+	left:237px;
+	top:806px				
+}
+
+#multiple_fetos
+{
+	font-size:9pt;
+	font-weight:normal;
+	position:absolute;
+	left:257px;
+	top:806px			
+}
+
+#induccion_cod
+{
+	font-size:8pt;
+	font-weight:normal;
+	position:absolute;
+	left:363px;
+	top:821px;			
+}
+#operatorio_cod
+{
+	font-size:8pt;
+	font-weight:normal;
+	position:absolute;
+	left:430px;
+	top:821px;		
+}
