@@ -2,9 +2,9 @@ body
 {
 	font-size:9pt;
 	position: absolute;
-	width: 816px;
-	height: 1247px;
-	border: thin black solid;
+	width: 1150px;
+	height: 1760px;
+
 	font-family: Helvetica;
 }
 
@@ -21,76 +21,76 @@ body
 	position: absolute;
 	left:8px;
 	top:10px;
-	width: 796px;
-	height: 1227px;
+	width: 1134px;
+	height: 1740px;
 	background-image:url(carne_PRENATAL_FINAL.png);
 	background-repeat:no-repeat;
 	background-position:0 0;
-	background-size: 796px 1227px;	
+	background-size: 1134px 1740px;	
 }
 
 #id_historia
 {
-	font-size:12pt;
+	font-size:14pt;
 	font-weight:bold;
 	position:absolute;
-	left:519px;
-	top:114px;
+	left:736px;
+	top:164px;
 }
 
 #no_paciente
 {
-	font-size:12pt;
+	font-size:14pt;
 	font-weight:bold;
 	position:absolute;
-	left:696px;
-	top:117px;
+	left:988px;
+	top:168px;
 }
 
 
 #nombreafi
 {
-	font-size:7pt;
+	font-size:10pt;
 	font-weight:bold;
 	position:absolute;
-	left:22px;
-	top:187px;
+	left:28px;
+	top:260px;
 }
 #dirafi
 {
-	font-size:7pt;
+	font-size:9.5pt;
 	font-weight:bold;
 	position:absolute;
-	left:197px;
-	top:187px;
+	left:278px;
+	top:261px;
 }
 #ciuafi
 {
-	font-size:7pt;
+	font-size:10pt;
 	font-weight:bold;
 	position:absolute;
-	left:328px;
-	top:187px;	
+	left:465px;
+	top:260px;	
 }
 
 #telafi
 {
-	font-size:7pt;
+	font-size:10pt;
 	font-weight:bold;
 	position:absolute;
-	left:445px;
-	top:187px;
+	left:632px;
+	top:260px;
 }
 
 
 
 #edad_afi
 {
-	font-size:10pt;
+	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
-	left:26.5px;
-	top:210.5px;	
+	left:34px;
+	top:294.5px;	
 }
 
 /*antecedentes ginecologicos*/

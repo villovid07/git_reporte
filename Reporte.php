@@ -273,7 +273,7 @@
       $alfabeta='2';
       $duracion_nivel=6;
       $tipo_regimen='2';
-      $id_etnia='5';
+      $id_etnia='4';
       $nombre_afi="Doris del Socorro Martinez Ricaurte";
       $identificacion_afi="1085274875";
       $direccion_residencia="Calle 123 #30-30 barrio falso";
@@ -377,7 +377,7 @@
       }
       else if($tipo_regimen=='2')//subsidiado
       {
-          $xregimen=634;
+          $xregimen=901;
       }
       else if($tipo_regimen=='3')//V IN
       {
@@ -385,20 +385,20 @@
       }  
       else if($tipo_regimen=='4')//desplaz
       {
-          $xregimen=684;
+          $xregimen=674;
       }
       else if($tipo_regimen=='5')//otro
       {
           $xregimen=711;
       }
-      echo "<div class='equis' style='width: 12px;height: 12px;background-size: 12px 12px;position:absolute;left:".$xregimen."px;top:195px;'></div>";
+      echo "<div class='equis' style='width: 15px;height: 15px;background-size: 15px 15px;position:absolute;left:".$xregimen."px;top:273px;'></div>";
     }
 
     //edad afiliado riesgo
 
     if($edad_afi < 15 || $edad_afi > 35)
     {
-        echo "<div class='equis' style='width: 12px;height: 12px;background-size: 12px 12px;position:absolute;left:52px;top:225px;'></div>"; 
+        echo "<div class='equis' style='width: 14px;height: 14px;background-size: 14px 14px;position:absolute;left:71.5px;top:316.5px;'></div>"; 
     }
 
     //etnia afiliado
@@ -410,26 +410,26 @@
         $xetnia;
         if($id_etnia=='2')//blanca
         {
-            $xetnia=128;
+            $xetnia=178;
         }
         else if($id_etnia=='3')//negra
         {
-            $xetnia=162;
+            $xetnia=228;
         }
         else if($id_etnia=='1')//mestiza
         {
-            $xetnia=196;
+            $xetnia=276;
         }  
         else if($id_etnia=='4')//indigena
         {
-            $xetnia=234;
+            $xetnia=330;
         }
         else if($id_etnia=='5')//otra
         {
-            $xetnia=267;
+            $xetnia=377;
         }
 
-        echo "<div class='equis' style='width: 12px;height: 12px;background-size: 12px 12px;position:absolute;left:".$xetnia."px;top:226px;'></div>"; 
+        echo "<div class='equis' style='width: 15px;height: 15px;background-size: 15px 15px;position:absolute;left:".$xetnia."px;top:317px;'></div>"; 
      }
 
      //alfabeta afiliado
@@ -2323,27 +2323,28 @@
       <!-- RECIEN NACIDO ++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
       <?php
           //$sexo_rn='1'
-          if(!($sexo_rn==' ')
+          if(!($sexo_rn==' '))
           {
             $y;
             if($sexo_rn=='F')
             {
-              $y=970;
+              $y=979;
             }
             else if($sexo_rn=='O')
             {
-              $y=970;  
+              $y=1007;//
             }
 
             else if($sexo_rn=='M')
             {
-              $y=970;
+              $y=993;
             }
-            echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:30px;top:".$y."px;'></div>";
+            echo "<div class='equis' style='width:7px;height:7px;background-size: 7px 7px;position:absolute;left:26px;top:".$y."px;'></div>";
 
           }
-
       ?>
+
+
 
 
 
