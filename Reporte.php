@@ -269,10 +269,10 @@
       $cond_medica_grave='1';
 
       $ultima_previo='1';
-      $nivel_estudio='4';
-      $alfabeta='2';
+      $nivel_estudio='1';
+      $alfabeta='1';
       $duracion_nivel=6;
-      $tipo_regimen='2';
+      $tipo_regimen='1';
       $id_etnia='4';
       $nombre_afi="Doris del Socorro Martinez Ricaurte";
       $identificacion_afi="1085274875";
@@ -280,7 +280,7 @@
       $telefono_afi="72020202";
       $fecha_nac_afi=date('Y-m-d');
       $tipo_sangre_afi='O+';
-      $estado_civil_afi='4';      
+      $estado_civil_afi='2';      
 
 
       //----------------------------
@@ -373,7 +373,7 @@
       $xregimen;
       if($tipo_regimen=='1')//contributivo
       {
-          $xregimen=612;
+          $xregimen=870;
       }
       else if($tipo_regimen=='2')//subsidiado
       {
@@ -381,15 +381,15 @@
       }
       else if($tipo_regimen=='3')//V IN
       {
-          $xregimen=656;
+          $xregimen=930;
       }  
       else if($tipo_regimen=='4')//desplaz
       {
-          $xregimen=674;
+          $xregimen=972;//
       }
       else if($tipo_regimen=='5')//otro
       {
-          $xregimen=711;
+          $xregimen=1010;//
       }
       echo "<div class='equis' style='width: 15px;height: 15px;background-size: 15px 15px;position:absolute;left:".$xregimen."px;top:273px;'></div>";
     }
@@ -440,13 +440,13 @@
         $xleer;
         if($alfabeta=='1')//si
         {
-            $xleer=302;
+            $xleer=430;
         }
-        else if($alfabeta=='2')//no
+        else if($alfabeta=='0')//no
         {
-            $xleer=333;
+            $xleer=470;//
         }
-        echo "<div class='equis' style='width: 12px;height: 12px;background-size: 12px 12px;position:absolute;left:".$xleer."px;top:226px;'></div>"; 
+        echo "<div class='equis' style='width: 15px;height: 15px;background-size: 15px 15px;position:absolute;left:".$xleer."px;top:317px;'></div>"; 
      }
 
      //estudios_nivel
@@ -457,22 +457,22 @@
           $xetnia;
           if($nivel_estudio=='1')//ninguno
           {
-              $xetnia=380;
+              $xetnia=540;
           }
           else if($nivel_estudio=='2')//primaria
           {
-              $xetnia=425;
+              $xetnia=600;//
           }
           else if($nivel_estudio=='3')//secundaria
           {
-              $xetnia=470;
+              $xetnia=670;//
           }  
           else if($nivel_estudio=='4')//universidad
           {
-              $xetnia=525;
+              $xetnia=745;//;
           }
 
-          echo "<div class='equis' style='width: 12px;height: 12px;background-size: 12px 12px;position:absolute;left:".$xetnia."px;top:226px;'></div>"; 
+          echo "<div class='equis' style='width: 15px;height: 15px;background-size: 15px 15px;position:absolute;left:".$xetnia."px;top:317px;'></div>"; 
        }
 
       //estado_civil
@@ -481,22 +481,22 @@
           $x;
           if($estado_civil_afi=='2')//casada
           {
-              $x=638;
+              $x=905;
           }
           else if($estado_civil_afi=='5')//union libre         
           {
-              $x=687;
+              $x=975;
           }
           else if($estado_civil_afi=='1')//soltera
           {
-              $x=738;
+              $x=1048;//
           }  
           else if($estado_civil_afi=='3' || $estado_civil_afi=='4')//otro
           {
-              $x=775;
+              $x=1100;//
           }
 
-          echo "<div class='equis' style='width: 12px;height: 12px;background-size: 12px 12px;position:absolute;left:".$x."px;top:226px;'></div>"; 
+          echo "<div class='equis' style='width: 15px;height: 15px;background-size: 15px 15px;position:absolute;left:".$x."px;top:317px;'></div>"; 
        }      
 
   ?>    
@@ -509,13 +509,13 @@
           $x;
           if($tbc_familiar=='1')//si
           {
-              $x=44;
+              $x=60;
           }
           else if($tbc_familiar=='0')//no
           {
-              $x=32.5;
+              $x=43;//
           }
-           echo "<div class='equis' style='width: 9px;height: 9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:278.4px;'></div>"; 
+           echo "<div class='equis' style='width: 12px;height: 12px;background-size: 12px 12px;position:absolute;left:".$x."px;top:391.3px;'></div>"; 
 
       }
 
@@ -524,13 +524,13 @@
           $x;
           if($diabetes_familiar=='1')//si
           {
-              $x=44;
+              $x=60;
           }
           else if($diabetes_familiar=='0')//no
           {
-              $x=32.5;
+              $x=43;
           }
-          echo "<div class='equis' style='width: 9px;height: 9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:289.7px;'></div>";   
+          echo "<div class='equis' style='width: 12px;height: 12px;background-size: 12px 12px;position:absolute;left:".$x."px;top:407px;'></div>";   
 
       }
 
@@ -539,13 +539,13 @@
           $x;
           if($hta_familiar=='1')//si
           {
-              $x=44;
+              $x=60;
           }
           else if($hta_familiar=='0')//no
           {
-              $x=32.5;
+              $x=43;
           }
-          echo "<div class='equis' style='width: 9px;height: 9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:301px;'></div>";   
+          echo "<div class='equis' style='width: 12px;height: 12px;background-size: 12px 12px;position:absolute;left:".$x."px;top:423.2px;'></div>";   
       }
 
       if(!($preeclampsia_familiar== '' || $preeclampsia_familiar== '3'))
@@ -553,13 +553,13 @@
           $x;
           if($preeclampsia_familiar=='1')//si
           {
-              $x=44;
+              $x=60;
           }
           else if($preeclampsia_familiar=='0')//no
           {
-              $x=32.5;
+              $x=43;
           }
-          echo "<div class='equis' style='width: 9px;height: 9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:313px;'></div>";   
+          echo "<div class='equis' style='width: 12px;height: 12px;background-size: 12px 12px;position:absolute;left:".$x."px;top:440px;'></div>";   
 
       }
 
@@ -568,13 +568,13 @@
           $x;
           if($otros_familiar=='1')//si
           {
-              $x=44;
+              $x=60;
           }
           else if($otros_familiar=='0')//no
           {
-              $x=32.5;
+              $x=43;
           }
-          echo "<div class='equis' style='width: 9px;height: 9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:323.5px;'></div>";   
+          echo "<div class='equis' style='width: 12px;height: 12px;background-size: 12px 12px;position:absolute;left:".$x."px;top:455px;'></div>";   
 
       }
 
@@ -583,13 +583,13 @@
           $x;
           if($tbc_personal=='1')//si
           {
-              $x=121.5;
+              $x=170;
           }
           else if($tbc_personal=='0')//no
           {
-              $x=110;
+              $x=154;
           }
-           echo "<div class='equis' style='width: 9px;height: 9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:278.4px;'></div>"; 
+           echo "<div class='equis' style='width: 12px;height: 12px;background-size: 12px 12px;position:absolute;left:".$x."px;top:391.3px;'></div>"; 
       }    
 
       if(!($diabetes_personal== '' || $diabetes_personal== '0'))
@@ -597,22 +597,22 @@
           $x;
           if($diabetes_personal=='2')//I
           {
-              $x=121.5;
+              $x=170;
           }
           else if($diabetes_personal=='1')//no
           {
-              $x=110;
+              $x=154;
           }
           else if($diabetes_personal=='3')//II
           {
-              $x=133.5;
+              $x=188;//
           }
 
           else if($diabetes_personal=='4')//G
           {
-              $x=145;
+              $x=203;
           }
-          echo "<div class='equis' style='width: 9px;height: 9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:289.7px;'></div>";   
+          echo "<div class='equis' style='width: 12px;height: 12px;background-size: 12px 12px;position:absolute;left:".$x."px;top:407px;'></div>";   
 
       }
 
@@ -621,13 +621,13 @@
           $x;
           if($hta_personal=='1')//si
           {
-              $x=121.5;
+              $x=170;
           }
           else if($hta_personal=='0')//no
           {
-              $x=110;
+              $x=154;
           }
-          echo "<div class='equis' style='width: 9px;height: 9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:301px;'></div>";   
+          echo "<div class='equis' style='width: 12px;height: 12px;background-size: 12px 12px;position:absolute;left:".$x."px;top:423.2px;'></div>";   
       }
 
       if(!($preeclampsia_personal== '' || $preeclampsia_personal== '3'))
@@ -635,13 +635,13 @@
           $x;
           if($preeclampsia_personal=='1')//si
           {
-              $x=121.5;
+              $x=170;
           }
           else if($preeclampsia_personal=='0')//no
           {
-              $x=1110;
+              $x=154;
           }
-          echo "<div class='equis' style='width: 9px;height: 9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:313px;'></div>";   
+          echo "<div class='equis' style='width: 12px;height: 12px;background-size: 12px 12px;position:absolute;left:".$x."px;top:440px;'></div>";   
 
       }
 
@@ -650,13 +650,13 @@
           $x;
           if($otros_personal=='1')//si
           {
-              $x=121.5;
+              $x=170;
           }
           else if($otros_personal=='0')//no
           {
-              $x=110;
+              $x=154;
           }
-          echo "<div class='equis' style='width: 9px;height: 9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:323.5px;'></div>";   
+          echo "<div class='equis' style='width: 12px;height: 12px;background-size: 12px 12px;position:absolute;left:".$x."px;top:455px;'></div>";   
 
       }   
   ?> 
@@ -670,13 +670,13 @@
           $x;
           if($cirug_tracto_rep=='1')//si
           {
-              $x=249;
+              $x=351;
           }
           else if($cirug_tracto_rep=='0')//no
           {
-              $x=237.5;
+              $x=335;
           }
-          echo "<div class='equis' style='width: 9px;height: 9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:272px;'></div>";   
+          echo "<div class='equis' style='width: 12px;height: 12px;background-size: 12px 12px;position:absolute;left:".$x."px;top:382px;'></div>";   
       }
 
       if(!($infertilidad== '' || $infertilidad== '3'))
@@ -684,13 +684,13 @@
           $x;
           if($infertilidad=='1')//si
           {
-              $x=249;
+              $x=351;
           }
           else if($infertilidad=='0')//no
           {
-              $x=237.5;
+              $x=335;
           }
-          echo "<div class='equis' style='width: 9px;height: 9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:282.2px;'></div>";   
+          echo "<div class='equis' style='width: 12px;height: 12px;background-size: 12px 12px;position:absolute;left:".$x."px;top:396.5px;'></div>";   
       }
 
       if(!($vih_antecedente== '' || $vih_antecedente== '3'))
@@ -698,13 +698,13 @@
           $x;
           if($vih_antecedente=='1')//si
           {
-              $x=249;
+              $x=351;
           }
           else if($vih_antecedente=='0')//no
           {
-              $x=237.5;
+              $x=335;
           }
-          echo "<div class='equis' style='width: 9px;height: 9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:291px;'></div>";   
+          echo "<div class='equis' style='width: 12px;height: 12px;background-size: 12px 12px;position:absolute;left:".$x."px;top:408.5px;'></div>";   
       }
 
       if(!($cardio_nefro_ant== '' || $cardio_nefro_ant== '3'))
@@ -712,13 +712,28 @@
           $x;
           if($cardio_nefro_ant=='1')//si
           {
-              $x=249;
+              $x=351;
           }
           else if($cardio_nefro_ant=='0')//no
           {
-              $x=237.5;
+              $x=335;
           }
-          echo "<div class='equis' style='width: 9px;height: 9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:300.5px;'></div>";   
+          echo "<div class='equis' style='width: 12px;height: 12px;background-size: 12px 12px;position:absolute;left:".$x."px;top:422.5px;'></div>";   
+      }
+
+
+      if(!($cond_medica_grave== '' || $cond_medica_grave== '3'))
+      {
+          $x;
+          if($cond_medica_grave=='1')//si
+          {
+              $x=351;
+          }
+          else if($cond_medica_grave=='0')//no
+          {
+              $x=335;
+          }
+          echo "<div class='equis' style='width: 12px;height: 12px;background-size: 12px 12px;position:absolute;left:".$x."px;top:435px;'></div>";   
       }
 
       if(!($mola_antecedente== '' || $mola_antecedente== '3'))
@@ -726,61 +741,71 @@
           $x;
           if($mola_antecedente=='1')//si
           {
-              $x=249;
+              $x=351;
           }
           else if($mola_antecedente=='0')//no
           {
-              $x=237.5;
+              $x=335;
           }
-          echo "<div class='equis' style='width: 9px;height: 9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:319.4px;'></div>";   
+          echo "<div class='equis' style='width: 12px;height: 12px;background-size: 12px 12px;position:absolute;left:".$x."px;top:449px;'></div>";   
       }
 
-      if(!($cond_medica_grave== '' || $cond_medica_grave== '3'))
-      {
-          $x;
-          if($cond_medica_grave=='1')//si
-          {
-              $x=249;
-          }
-          else if($cond_medica_grave=='0')//no
-          {
-              $x=237.5;
-          }
-          echo "<div class='equis' style='width: 9px;height: 9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:309.5px;'></div>";   
-      }
 
       if(!($emb_ectopico== '' || $emb_ectopico== '3'))
       {
           $x;
           if($emb_ectopico=='1')//si
           {
-              $x=249;
+              $x=351;
           }
           else if($emb_ectopico=='0')//no
           {
-              $x=237.5;
+              $x=335;//
           }
-          echo "<div class='equis' style='width: 9px;height: 9px;background-size: 9px 9px;position:absolute;left:".$x."px;top:328.5px;'></div>";   
+          echo "<div class='equis' style='width: 12px;height: 12px;background-size: 12px 12px;position:absolute;left:".$x."px;top:462px;'></div>";   
       }
   ?> 
   
       <!-- antecedentes ginecoobstetricos-->
-
-      <p id="gestas_previas"><?php echo $gestas_previas ?></p>
-      <p id="partos_ginec"><?php echo  $partos_ginec ?></p>
-      <p id="abortos_ginec"><?php echo $abortos_ginec ?></p>
-      <p id="vaginales"><?php echo $vaginales ?></p>
-      <p id="cesareas"><?php echo $cesareas ?></p>
-      <p id="nacidos_vivos"><?php echo $nacidos_vivos ?></p>
-      <p id="nacidos_muertos"><?php echo $nacidos_muertos ?></p>
-      <p id="viven_ginec"><?php echo $viven ?></p>
-      <p id="muertos_1sem"><?php echo $muertos_1sem ?></p>
-      <p id="muertos_despues"><?php echo $muertos_despues ?></p>
+  <?php    
+      if($gestas_previas>0){
+          echo "<p id='gestas_previas'>". $gestas_previas."</p>";
+      }
+      if($partos_ginec>0){
+          echo "<p id='partos_ginec'>" .$partos_ginec."</p>";
+      }
+      if($abortos_ginec>0){
+          echo "<p id='abortos_ginec'>".$abortos_ginec."</p>";
+      }
+      if($vaginales>0){
+          echo "<p id='vaginales'>".$vaginales."</p>";
+      }
+      if($cesareas>0){
+          echo "<p id='cesareas'>".$cesareas."</p>";
+      }
+      if($nacidos_vivos>0){
+          echo "<p id='nacidos_vivos'>".$nacidos_vivos."</p>";
+      }
+      if($nacidos_muertos>0){
+          echo "<p id='nacidos_muertos'>".$nacidos_muertos."</p>";
+      }
+      if($viven>0){
+          echo "<p id='viven_ginec'>".$viven."</p>";
+      }
+      if($muertos_1sem>0){
+          echo "<p id='muertos_1sem'>".$muertos_1sem."</p>";
+      }
+      if($muertos_despues>0){
+          echo "<p id='muertos_despues'>".$muertos_despues."</p>";
+      }
       
-      <p id="dia_fin"><?php echo $dia_fin?></p>
-      <p id="mes_fin"><?php echo $mes_fin?></p>
-      <p id="ano_fin"><?php echo $ano_fin?></p>
-
+      if($fin_embarazo_anterior!= null)
+      {
+          echo "<p id='dia_fin'>".$dia_fin."</p>";
+          echo "<p id='mes_fin'>".$mes_fin."</p>";
+          echo "<p id='ano_fin'>".$ano_fin."</p>";
+      }
+  ?>    
 
   <?php
     if(!($ultima_previo== '' || $ultima_previo== '0'))

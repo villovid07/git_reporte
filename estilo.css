@@ -97,7 +97,7 @@ body
 
 #gestas_previas
 {
-	font-size:10pt;
+	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
 	left:343.5px;
@@ -105,7 +105,7 @@ body
 }
 #partos_ginec
 {
-	font-size:10pt;
+	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
 	left:344.2px;
@@ -113,7 +113,7 @@ body
 }
 #abortos_ginec
 {
-	font-size:10pt;
+	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
 	left:388.4px;
@@ -122,7 +122,7 @@ body
 
 #vaginales
 {
-	font-size:10pt;
+	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
 	left:416.5px;
@@ -131,7 +131,7 @@ body
 
 #cesareas
 {
-	font-size:10pt;
+	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
 	left:416.5px;
@@ -140,7 +140,7 @@ body
 
 #nacidos_vivos
 {
-	font-size:10pt;
+	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
 	left:468.6px;
@@ -149,7 +149,7 @@ body
 
 #nacidos_muertos
 {
-	font-size:10pt;
+	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
 	left:468.6px;
@@ -158,7 +158,7 @@ body
 
 #viven_ginec
 {
-	font-size:10pt;
+	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
 	left:543.5px;
@@ -167,7 +167,7 @@ body
 
 #muertos_1sem
 {
-	font-size:10pt;
+	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
 	left:543.5px;
@@ -176,7 +176,7 @@ body
 
 #muertos_despues
 {
-	font-size:10pt;
+	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
 	left:543.5px;
@@ -293,27 +293,27 @@ body
 
 #ano_nacimiento
 {
-	font-size:8pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:735px;
-	top:185px;
+	left:1042px;
+	top:256px;
 }
 #mes_nacimiento
 {
-	font-size:8pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:753px;
-	top:185px;
+	left:1068px;
+	top:256px;
 }
 #dia_nacimiento
 {
-	font-size:8pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:771px;
-	top:185px;
+	left:1095px;
+	top:256px;
 }
 
 #ano_fpp
@@ -343,27 +343,27 @@ body
 
 #ano_fpp_cab
 {
-	font-size:8pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:701.5px;
-	top:152px;
+	left:995px;
+	top:210px;
 }
 #mes_fpp_cab
 {
-	font-size:8pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:729px;
-	top:152px;
+	left:1032px;
+	top:210px;
 }
 #dia_fpp_cab
 {
-	font-size:8pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:754px;
-	top:152px;
+	left:1065px;
+	top:210px;
 }
 
 #ano_fin
@@ -393,11 +393,11 @@ body
 
 #duracion_estudio
 {
-	font-size:11pt;
-	font-weight:normal;
+	font-size:13pt;
+	font-weight:bold;
 	position:absolute;
-	left:570px;
-	top:209.2px;	
+	left:800px;
+	top:298px;	
 }
 /*fecha ingreso */
 #dia_ingreso
