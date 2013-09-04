@@ -100,24 +100,24 @@ body
 	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
-	left:343.5px;
-	top:264px;	
+	left:485px;
+	top:369px;	
 }
 #partos_ginec
 {
 	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
-	left:344.2px;
-	top:297.5px;	
+	left:485px;
+	top:417px;	
 }
 #abortos_ginec
 {
 	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
-	left:388.4px;
-	top:264px;	
+	left:549px;
+	top:369px;	
 }
 
 #vaginales
@@ -125,8 +125,8 @@ body
 	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
-	left:416.5px;
-	top:288px;	
+	left:589px;
+	top:403px;	
 }
 
 #cesareas
@@ -134,8 +134,8 @@ body
 	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
-	left:416.5px;
-	top:314px;	
+	left:589px;
+	top:440px;	
 }
 
 #nacidos_vivos
@@ -143,8 +143,8 @@ body
 	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
-	left:468.6px;
-	top:288px;	
+	left:663px;
+	top:403px;	
 }
 
 #nacidos_muertos
@@ -152,8 +152,8 @@ body
 	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
-	left:468.6px;
-	top:314px;		
+	left:663px;
+	top:440px;		
 }
 
 #viven_ginec
@@ -161,8 +161,8 @@ body
 	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
-	left:543.5px;
-	top:259.5px;	
+	left:770px;
+	top:363px;	
 }
 
 #muertos_1sem
@@ -170,8 +170,8 @@ body
 	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
-	left:543.5px;
-	top:288px;	
+	left:770px;
+	top:403px;	
 }
 
 #muertos_despues
@@ -179,116 +179,116 @@ body
 	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
-	left:543.5px;
-	top:314px;	
+	left:770px;
+	top:440px;		
 }
 
 #peso_anterior
 {
-	font-size:8.3pt;
+	font-size:11.5pt;
 	font-weight:normal;
 	position:absolute;
-	left:30.5px;
-	top:374px;		
+	left:41px;
+	top:525px;		
 }
 
 #talla
 {
-	font-size:8.3pt;
+	font-size:11.5pt;
 	font-weight:normal;
 	position:absolute;
-	left:82.2px;
-	top:374px;		
+	left:115px;
+	top:525px;		
 }
 
 #no_gestacion
 {
-	font-size:10pt;
+	font-size:13pt;
 	font-weight:normal;
 	position:absolute;
-	left:142px;
-	top:370px;			
+	left:201px;
+	top:521px;			
 }
 
 #cigarrillos_dia
 {
-	font-size:9pt;
+	font-size:13pt;
 	font-weight:normal;
 	position:absolute;
-	left:443px;
-	top:372.5px;				
+	left:614px;
+	top:523px;				
 }
 
 #pri_dosis
 {
-	font-size:10pt;
+	font-size:13pt;
 	font-weight:normal;
 	position:absolute;
-	left:615.5px;
-	top:370px;
+	left:875px;
+	top:520px;
 }
 
 #seg_dosis
 {
-	font-size:10pt;
+	font-size:13pt;
 	font-weight:normal;
 	position:absolute;
-	left:632.5px;
-	top:370px;
+	left:899px;
+	top:520px;
 }
 
 #tipo_sangre
 {
-	font-size:7pt;
-	font-weight:normal;
+	font-size:9pt;
+	font-weight:bold;
 	position:absolute;
-	left:147px;
-	top:402px;
+	left:206px;
+	top:567px;
 }
 
 #hb_menor
 {
-	font-size:11pt;
+	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
-	left:555.3px;
-	top:397px;
+	left:790px;
+	top:562px;
 }
 
 #hb_mayor
 {
-	font-size:11pt;
+	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
-	left:605.7px;
-	top:397px;
+	left:854px;
+	top:562px;
 }
 
 #ano_fum
 {
-	font-size:8pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:196px;
-	top:369px;
+	left:275px;
+	top:519px;
 }
 
 #mes_fum
 {
-	font-size:8pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:210px;
-	top:369px;
+	left:295px;
+	top:519px;
 }
 
 #dia_fum
 {
-	font-size:8pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:223.5px;
-	top:369px;
+	left:315px;
+	top:519px;
 }
 
 #ano_nacimiento
@@ -318,27 +318,27 @@ body
 
 #ano_fpp
 {
-	font-size:8pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:251px;
-	top:369px;
+	left:353px;
+	top:519px;
 }
 #mes_fpp
 {
-	font-size:8pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:270px;
-	top:369px;
+	left:376px;
+	top:519px;
 }
 #dia_fpp
 {
-	font-size:8pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:285px;
-	top:369px;
+	left:394px;
+	top:519px;
 }
 
 #ano_fpp_cab
@@ -368,27 +368,27 @@ body
 
 #ano_fin
 {
-	font-size:9pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:603px;
-	top:265.5px;
+	left:855px;
+	top:374px;
 }
 #mes_fin
 {
-	font-size:9pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:627px;
-	top:265.5px;
+	left:890px;
+	top:374px;
 }
 #dia_fin
 {
-	font-size:9pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:651px;
-	top:265.5px;
+	left:925px;
+	top:374px;
 }
 
 #duracion_estudio
@@ -399,69 +399,71 @@ body
 	left:800px;
 	top:298px;	
 }
+
+
 /*fecha ingreso */
 #dia_ingreso
 {
-	font-size:9pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:96.5px;
-	top:750px;		
+	left:132px;
+	top:1062px;		
 
 }
 
 #mes_ingreso
 {
-	font-size:9pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:78px;
-	top:750px;	
+	left:107px;
+	top:1062px;	
 }
 
 #ano_ingreso
 {
-	font-size:9pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:59px;
-	top:750px;	
+	left:82px;
+	top:1062px;	
 }
 
 #consulta_prenatal
 {
-	font-size:11pt;
+	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
-	left:130px;
-	top:752px;		
+	left:181px;
+	top:1066px;		
 }
 
 #hospitalizacion_dias
 {
-	font-size:11pt;
+	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
-	left:191px;
-	top:747px;			
+	left:268px;
+	top:1060px;			
 }
 
 #semana_corticoides
 {
-	font-size:11pt;
+	font-size:13pt;
 	font-weight:normal;
 	position:absolute;
-	left:346px;
-	top:740px;				
+	left:491px;
+	top:1050px;				
 }
 
 #semana_rupt
 {
-	font-size:11pt;
+	font-size:13pt;
 	font-weight:normal;
 	position:absolute;
-	left:529px;
-	top:754px
+	left:752px;
+	top:1070px
 }
 
 /**
@@ -469,164 +471,306 @@ body
 */
 #ano_membrana
 {
-	font-size:10pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:483px;
-	top:741px
+	left:688px;
+	top:1051px
 }
 
 #mes_membrana
 {
-	font-size:10pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:502.3px;
-	top:741px
+	left:715px;
+	top:1051px
 }
 
 #dia_membrana
 {
-	font-size:10pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:521px;
-	top:741px
+	left:740px;
+	top:1051px
 }	
 
 #hora_membrana
 {
-	font-size:11pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:483px;
-	top:754px	
+	left:688px;
+	top:1072px	
 }
 
 #minute_membrana
 {
-	font-size:11pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:502.3px;
-	top:754px	
+	left:715px;
+	top:1072px	
 }
 
 #horas_parto_ruptura
 {
-	font-size:11pt;
+	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
-	left:612px;
-	top:754px		
+	left:870px;
+	top:1070px		
 }
 
 #eg_parto_semanas
 {
-	font-size:11pt;
+	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
-	left:677px;
-	top:747px		
+	left:962px;
+	top:1060px		
 }
 
 #eg_parto_dias
 {
-	font-size:11pt;
+	font-size:14pt;
 	font-weight:normal;
 	position:absolute;
-	left:706px;
-	top:747px			
+	left:1000px;
+	top:1060px			
 }
 
 /*fecha hora parto*/
 
 #ano_parto
 {
-	font-size:9pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:170px;
-	top:804.5px			
+	left:240px;
+	top:1139px			
 }
 
 #mes_parto
 {
-	font-size:9pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:185.3px;
-	top:804.5px			
+	left:262px;
+	top:1139px			
 }
 
 #dia_parto
 {
-	font-size:9pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:200.2px;
-	top:804.5px			
+	left:283px;
+	top:1139px			
 }
 
 #hora_parto
 {
-	font-size:9pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:173px;
-	top:791px			
+	left:245px;
+	top:1120px			
 }
 
 #minute_parto
 {
-	font-size:9pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:197px;
-	top:791px			
+	left:275px;
+	top:1120px			
 }
 
 #multiple_orden
 {
-	font-size:9pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:237px;
-	top:806px				
+	left:335px;
+	top:1140px				
 }
 
 #multiple_fetos
 {
-	font-size:9pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:257px;
-	top:806px			
+	left:363px;
+	top:1140px			
 }
 
 #induccion_cod
 {
-	font-size:8pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:363px;
-	top:821px;			
+	left:513px;
+	top:1160px;			
 }
 #operatorio_cod
 {
-	font-size:8pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:430px;
-	top:821px;		
+	left:609px;
+	top:1160px;		
 }
 
 #nombre_atendio_parto
 {
-	font-size:8pt;
+	font-size:12pt;
 	font-weight:normal;
 	position:absolute;
-	left:134px;
-	top:911px;
-	text-transform: capitalize;; 			
+	left:185px;
+	top:1288px;
+	text-transform: capitalize; 			
 }
+
+#peso_rn
+{
+	font-size:12pt;
+	font-weight:normal;
+	position:absolute;
+	left:107px;
+	top:1375px; 			
+}
+
+#longitud
+{
+	font-size:11pt;
+	font-weight:normal;
+	position:absolute;
+	left:208px;
+	top:1366px; 			
+}
+#per_cefalico
+{
+	font-size:11pt;
+	font-weight:normal;
+	position:absolute;
+	left:208px;
+	top:1403px; 			
+}
+#eg_semanas_rn
+{
+	font-size:12pt;
+	font-weight:normal;
+	position:absolute;
+	left:350px;
+	top:1380px; 			
+}
+#eg_dias_rn
+{
+	font-size:12pt;
+	font-weight:normal; 
+	position:absolute;
+	left:398px;
+	top:1380px; 			
+}
+#apgar1min
+{
+	font-size:10pt;
+	font-weight:normal; 
+	position:absolute;
+	left:709px;
+	top:1375px; 
+}
+#apgar5min
+{
+	font-size:10pt;
+	font-weight:normal; 
+	position:absolute;
+	left:702px;
+	top:1400px; 
+}
+
+#hemoclasificacion_rn
+{
+	font-size:9pt;
+	font-weight:bold; 
+	position:absolute;
+	left:845px;
+	top:1374px; 	
+}
+
+#cod_def_congenito
+{
+	font-size:12pt;
+	font-weight:normal; 
+	position:absolute;
+	left:352px;
+	top:1464px; 	
+}
+/*enfermedades*/
+
+#enf1_cod
+{
+	font-size:12pt;
+	font-weight:normal; 
+	position:absolute;
+	left:582px;
+	top:1458px;
+}
+#enf1_desc
+{
+	font-size:12pt;
+	font-weight:normal; 
+	position:absolute;
+	left:643px;
+	top:1458px;
+}
+#enf2_cod
+{
+	font-size:12pt;
+	font-weight:normal; 
+	position:absolute;
+	left:582px;
+	top:1484px;
+}
+#enf2_desc
+{
+	font-size:12pt;
+	font-weight:normal; 
+	position:absolute;
+	left:643px;
+	top:1484px;
+}
+#enf3_cod
+{
+	font-size:12pt;
+	font-weight:normal; 
+	position:absolute;
+	left:582px;
+	top:1509px;
+}
+#enf3_desc
+{
+	font-size:12pt;
+	font-weight:normal; 
+	position:absolute;
+	left:643px;
+	top:1509px;	
+}
+#otras_pocisiones
+{
+	font-size:12pt;
+	font-weight:normal; 
+	position:absolute;
+	left:1015px;
+	top:1512px;	
+}
+
+
+
+            
+            
+            
+            
+            
